@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#F5F8F6;color:#0F1A15;font-family:"Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.55}
+a{color:inherit;text-decoration:none}
+a:hover{color:#5F5D56}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0}
+input,select,textarea{font-family:inherit}
+::selection{background:#7C7A7233}
+@keyframes floatUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" accent="#7C7A72" active="private" hint-size="100%,64px"></dc-import>
+
+<main>
+  <section style="background:linear-gradient(160deg,#141E19,#0E1712);color:#EAF0EC;">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(60px,9vw,120px) clamp(20px,5vw,64px);">
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;margin:0 0 20px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#C8B79A;">Private label · Contract manufacturing · B2B</p>
+      <h1 style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.06s;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.96;font-size:clamp(46px,8vw,104px);max-width:14ch;">Your brand, on our line.</h1>
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:26px 0 0;max-width:600px;font-size:clamp(18px,2.2vw,23px);line-height:1.5;color:#AEB9B3;">From first formula to finished, shelf-ready pack — we manufacture sugar-free gum, drops and mints under your label. Flexible volumes, custom recipes, full compliance.</p>
+      <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.22s;margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="#enquire" style="font-size:16px;font-weight:700;padding:15px 28px;border-radius:999px;background:#EAF0EC;color:#0E1712;transition:transform .18s ease;" style-hover="transform:translateY(-2px);">Make your own brand →</a>
+        <a href="#capabilities" style="font-size:16px;font-weight:700;padding:15px 28px;border-radius:999px;background:transparent;color:#EAF0EC;border:1px solid rgba(255,255,255,.25);transition:border-color .18s ease,transform .18s ease;" style-hover="border-color:#EAF0EC;transform:translateY(-2px);">Our capabilities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section id="capabilities" style="max-width:1200px;margin:0 auto;padding:clamp(60px,8vw,110px) clamp(20px,5vw,64px);">
+    <div style="margin-bottom:44px;">
+      <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7C7A72;">What we do</p>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,4.5vw,52px);line-height:1;">Manufacturing capabilities</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #E2E8E4;border-radius:20px;padding:28px;transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px -26px rgba(15,26,21,.4);">
+        <div style="font-family:'Space Mono',monospace;font-weight:700;color:#7C7A72;font-size:13px;">MOQ</div>
+        <h3 style="margin:10px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;">Flexible minimums</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">From pilot runs to full pallets. Placeholder — state your real MOQ tiers here.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E2E8E4;border-radius:20px;padding:28px;transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px -26px rgba(15,26,21,.4);">
+        <div style="font-family:'Space Mono',monospace;font-weight:700;color:#7C7A72;font-size:13px;">R&amp;D</div>
+        <h3 style="margin:10px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;">Custom formulas</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">Bespoke flavours, sweetener systems and functional additions to your brief.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E2E8E4;border-radius:20px;padding:28px;transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px -26px rgba(15,26,21,.4);">
+        <div style="font-family:'Space Mono',monospace;font-weight:700;color:#7C7A72;font-size:13px;">PACK</div>
+        <h3 style="margin:10px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;">Custom packaging</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">Blisters, bottles, pouches and tins — printed and finished to your artwork.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E2E8E4;border-radius:20px;padding:28px;transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px -26px rgba(15,26,21,.4);">
+        <div style="font-family:'Space Mono',monospace;font-weight:700;color:#7C7A72;font-size:13px;">CERT</div>
+        <h3 style="margin:10px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;">Compliance &amp; certs</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">Food-safety certified production and full documentation for export.</p>
+      </div>
+    </div>
+
+    <!-- 2-PHOTO GALLERY -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;margin-top:56px;">
+      <article style="display:flex;flex-direction:column;gap:13px;">
+        <div style="position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/03.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(124,122,114,.5);border-color:#7C7A72;">
+          <span style="position:absolute;top:14px;left:14px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#0F1A15;background:#fff;border:1px solid #E2E8E4;border-radius:999px;padding:5px 10px;">PHOTO 03</span>
+          
+        </div>
+        <p style="margin:0;font-size:15px;color:#55635C;">One-line caption goes here — e.g. our production line or a white-label pack.</p>
+      </article>
+      <article style="display:flex;flex-direction:column;gap:13px;">
+        <div style="position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/08.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(124,122,114,.5);border-color:#7C7A72;">
+          <span style="position:absolute;top:14px;left:14px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#0F1A15;background:#fff;border:1px solid #E2E8E4;border-radius:999px;padding:5px 10px;">PHOTO 08</span>
+          
+        </div>
+        <p style="margin:0;font-size:15px;color:#55635C;">One-line caption goes here — e.g. custom packaging or finished private-label range.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section style="background:#EFF2F0;">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,100px) clamp(20px,5vw,64px);">
+      <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7C7A72;">How it works</p>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4vw,46px);line-height:1;margin-bottom:36px;">From brief to shelf in four steps</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px;">
+        <div><div style="font-family:'Space Mono',monospace;color:#7C7A72;font-weight:700;">01</div><h3 style="margin:8px 0 6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;">Brief &amp; sampling</h3><p style="margin:0;color:#55635C;font-size:15px;">We turn your idea into tasting samples.</p></div>
+        <div><div style="font-family:'Space Mono',monospace;color:#7C7A72;font-weight:700;">02</div><h3 style="margin:8px 0 6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;">Formula &amp; pack</h3><p style="margin:0;color:#55635C;font-size:15px;">Lock the recipe and packaging spec.</p></div>
+        <div><div style="font-family:'Space Mono',monospace;color:#7C7A72;font-weight:700;">03</div><h3 style="margin:8px 0 6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;">Production</h3><p style="margin:0;color:#55635C;font-size:15px;">We manufacture to your volumes.</p></div>
+        <div><div style="font-family:'Space Mono',monospace;color:#7C7A72;font-weight:700;">04</div><h3 style="margin:8px 0 6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;">Delivery</h3><p style="margin:0;color:#55635C;font-size:15px;">Shelf-ready stock, shipped to you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY FORM -->
+  <section id="enquire" style="max-width:1200px;margin:0 auto;padding:clamp(60px,8vw,110px) clamp(20px,5vw,64px);">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,60px);">
+      <div>
+        <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7C7A72;">Make your own brand</p>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,4.5vw,52px);line-height:1.02;">Tell us about<br>your project</h2>
+        <p style="margin:18px 0 0;color:#55635C;font-size:17px;max-width:420px;">Share a few details and our private-label team will come back to you within two working days (placeholder).</p>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;font-size:15px;color:#3B4842;">
+          <span>📧 <a href="mailto:privatelabel@marvin.example" style="color:#3B4842;font-weight:600;" style-hover="color:#0F1A15;">privatelabel@marvin.example</a></span>
+          <span>📞 +00 000 00 000</span>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:1px solid #E2E8E4;border-radius:24px;padding:clamp(24px,3.5vw,40px);">
+        <sc-if value="{{submitted}}" hint-placeholder-val="{{false}}">
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:24px 0;">
+            <span style="width:46px;height:46px;border-radius:50%;background:color-mix(in srgb,#7C7A72 18%,#fff);display:flex;align-items:center;justify-content:center;font-size:22px;">✓</span>
+            <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;">Thanks — we've got it.</h3>
+            <p style="margin:0;color:#55635C;font-size:16px;">Our team will be in touch shortly. (This is a demo form — no data is sent.)</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{notSubmitted}}" hint-placeholder-val="{{true}}">
+          <form onSubmit="{{onSubmit}}" style="display:flex;flex-direction:column;gap:16px;">
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Your name
+              <input type="text" required placeholder="Jane Doe" style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;" style-focus="border-color:#7C7A72;outline:none;">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Company
+              <input type="text" required placeholder="Your company" style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;" style-focus="border-color:#7C7A72;outline:none;">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Work email
+              <input type="email" required placeholder="jane@company.com" style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;" style-focus="border-color:#7C7A72;outline:none;">
+            </label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Product
+                <select style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;" style-focus="border-color:#7C7A72;outline:none;">
+                  <option>Chewing gum</option>
+                  <option>Xylitol gum</option>
+                  <option>Hard-candy drops</option>
+                  <option>Mints</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Est. volume
+                <select style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;" style-focus="border-color:#7C7A72;outline:none;">
+                  <option>Pilot / sampling</option>
+                  <option>10k – 50k units</option>
+                  <option>50k – 250k units</option>
+                  <option>250k+ units</option>
+                </select>
+              </label>
+            </div>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B4842;">Tell us more
+              <textarea rows="4" placeholder="Flavours, format, timeline, target market…" style="padding:12px 14px;border:1px solid #DDE5E0;border-radius:12px;font-size:15px;background:#F8FAF9;color:#0F1A15;resize:vertical;" style-focus="border-color:#7C7A72;outline:none;"></textarea>
+            </label>
+            <button type="submit" style="margin-top:4px;font-size:16px;font-weight:700;padding:14px 24px;border-radius:999px;background:#0F1A15;color:#fff;border:none;cursor:pointer;transition:transform .18s ease,filter .18s ease;" style-hover="transform:translateY(-2px);filter:brightness(1.1);">Send enquiry</button>
+          </form>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dc-import name="SiteFooter" accent="#7C7A72" hint-size="100%,460px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { submitted: false };
+  renderVals() {
+    return {
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
+    };
+  }
+}
+</script>
+</body>
+</html>

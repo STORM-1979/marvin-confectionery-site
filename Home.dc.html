@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#F5F8F6;color:#0F1A15;font-family:"Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.55}
+a{color:inherit;text-decoration:none}
+a:hover{color:#0F8A63}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0}
+::selection{background:#12B88633}
+@keyframes floatUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" accent="#12B886" active="home" hint-size="100%,64px"></dc-import>
+
+<main>
+  <!-- HERO -->
+  <section style="position:relative;overflow:hidden;background:linear-gradient(180deg,color-mix(in srgb,#12B886 13%,#F5F8F6),#F5F8F6);">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(60px,9vw,120px) clamp(20px,5vw,64px) clamp(52px,7vw,96px);">
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;margin:0 0 22px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0F8A63;">Confectionery manufacturer · Est. sugar-free</p>
+      <h1 style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.06s;margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95;font-size:clamp(52px,11vw,132px);color:#0F1A15;">Sugar-free,<br>done properly.</h1>
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:28px 0 0;max-width:640px;font-size:clamp(18px,2.3vw,23px);line-height:1.5;color:#48554E;">We make chewing gum, drops and mints without the sugar — six of our own brands, plus private-label production for yours. One factory, one standard, no compromises.</p>
+      <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.22s;margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;">
+        <a href="#brands" style="font-size:16px;font-weight:700;padding:15px 28px;border-radius:999px;background:#12B886;color:#fff;transition:transform .18s ease,filter .18s ease;" style-hover="filter:brightness(.94);transform:translateY(-2px);">Explore the range</a>
+        <a href="PrivateLabel.dc.html" style="font-size:16px;font-weight:700;padding:15px 28px;border-radius:999px;background:#fff;color:#0F1A15;border:1px solid #DDE5E0;transition:transform .18s ease,border-color .18s ease;" style-hover="border-color:#12B886;transform:translateY(-2px);">Private label →</a>
+      </div>
+      <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s;margin-top:44px;display:flex;flex-wrap:wrap;gap:10px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #DDE5E0;color:#3B4842;">No added sugar</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #DDE5E0;color:#3B4842;">Xylitol options</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #DDE5E0;color:#3B4842;">Vegan-friendly</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #DDE5E0;color:#3B4842;">Made in Europe</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands" style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:44px;">
+      <div>
+        <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0F8A63;">Our brands</p>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,4.5vw,52px);line-height:1;">Six ways to go sugar-free</h2>
+      </div>
+      <p style="max-width:340px;margin:0;color:#55635C;font-size:16px;">Each brand has its own character and colour — all made under the Marvin roof.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:22px;">
+
+      <a href="BioGum.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:color-mix(in srgb,#2F9E44 12%,#fff);border:1px solid color-mix(in srgb,#2F9E44 22%,#E2E8E4);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(47,158,68,.6);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#2F9E44;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;">BioGum</h3>
+          <p style="margin:6px 0 0;color:#41504A;font-size:15px;">Plant-based gum with vitamins. Kinder to you and the planet.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#2F9E44;font-weight:700;">View →</span>
+      </a>
+
+      <a href="Marvins.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:color-mix(in srgb,#FF3D8B 12%,#fff);border:1px solid color-mix(in srgb,#FF3D8B 22%,#E2E8E4);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(255,61,139,.55);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#FF3D8B;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;">Marvin's Gum</h3>
+          <p style="margin:6px 0 0;color:#41504A;font-size:15px;">Bold, long-lasting flavour. The fun, everyday chew.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#E12B77;font-weight:700;">View →</span>
+      </a>
+
+      <a href="Xylitol.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:color-mix(in srgb,#0FA3B1 12%,#fff);border:1px solid color-mix(in srgb,#0FA3B1 22%,#E2E8E4);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(15,163,177,.55);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#0FA3B1;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;">Xylitol Gum</h3>
+          <p style="margin:6px 0 0;color:#41504A;font-size:15px;">100% xylitol-sweetened. Tooth-friendly by design.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#0FA3B1;font-weight:700;">View →</span>
+      </a>
+
+      <a href="Drops.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:color-mix(in srgb,#FB7A3C 12%,#fff);border:1px solid color-mix(in srgb,#FB7A3C 22%,#E2E8E4);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(251,122,60,.5);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#FB7A3C;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;">Sugar-Free Drops</h3>
+          <p style="margin:6px 0 0;color:#41504A;font-size:15px;">Fruity hard candies with all the taste, none of the sugar.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#E8611F;font-weight:700;">View →</span>
+      </a>
+
+      <a href="Mints.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:color-mix(in srgb,#4DA6F0 12%,#fff);border:1px solid color-mix(in srgb,#4DA6F0 22%,#E2E8E4);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(77,166,240,.5);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#4DA6F0;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;">Sugar-Free Mints</h3>
+          <p style="margin:6px 0 0;color:#41504A;font-size:15px;">Ice-cool freshness in a pocket-sized tin.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#2E86D6;font-weight:700;">View →</span>
+      </a>
+
+      <a href="PrivateLabel.dc.html" style="display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:24px;border-radius:22px;background:#0F1A15;border:1px solid #0F1A15;transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 22px 50px -28px rgba(15,26,21,.7);">
+        <span style="width:16px;height:16px;border-radius:5px;background:#7C7A72;"></span>
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;color:#fff;">Private Label</h3>
+          <p style="margin:6px 0 0;color:#AEB9B3;font-size:15px;">Your brand, our production line. From formula to finished pack.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:13px;color:#C7CFC9;font-weight:700;">View →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section style="background:#0E1712;color:#E7EEEA;">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px);">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px;">
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,6vw,68px);letter-spacing:-.03em;color:#12B886;">40+</div>
+          <p style="margin:8px 0 0;color:#A7B4AD;font-size:15px;">Years making sugar-free confectionery.</p>
+        </div>
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,6vw,68px);letter-spacing:-.03em;color:#12B886;">60</div>
+          <p style="margin:8px 0 0;color:#A7B4AD;font-size:15px;">Markets we ship to worldwide.</p>
+        </div>
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,6vw,68px);letter-spacing:-.03em;color:#12B886;">0g</div>
+          <p style="margin:8px 0 0;color:#A7B4AD;font-size:15px;">Added sugar in everything we make.</p>
+        </div>
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,6vw,68px);letter-spacing:-.03em;color:#12B886;">100%</div>
+          <p style="margin:8px 0 0;color:#A7B4AD;font-size:15px;">Recyclable packaging by 2027 (placeholder).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
+    <div style="border-radius:28px;padding:clamp(36px,6vw,72px);background:linear-gradient(135deg,#12B886,color-mix(in srgb,#12B886 55%,#0F1A15));display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;">
+      <div style="max-width:560px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4.2vw,48px);line-height:1.02;color:#fff;">Thinking of launching your own sugar-free line?</h2>
+        <p style="margin:16px 0 0;color:rgba(255,255,255,.9);font-size:17px;">Tell us what you have in mind — flavour, format, volumes — and we'll come back with options.</p>
+      </div>
+      <a href="PrivateLabel.dc.html" style="font-size:16px;font-weight:700;padding:16px 30px;border-radius:999px;background:#0F1A15;color:#fff;transition:transform .18s ease;" style-hover="transform:translateY(-2px);">Start a project →</a>
+    </div>
+  </section>
+</main>
+
+<dc-import name="SiteFooter" accent="#12B886" hint-size="100%,460px"></dc-import>
+</x-dc>
+</body>
+</html>

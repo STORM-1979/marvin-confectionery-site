@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="position:sticky;top:0;z-index:50;background:rgba(245,248,246,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E2E8E4;">
+  <div style="max-width:1200px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:9px;flex:0 0 auto;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.03em;color:#0F1A15;">
+      <span style="width:13px;height:13px;border-radius:4px;background:{{accent}};display:inline-block;"></span>
+      MARVIN
+    </a>
+    <nav style="flex:1 1 320px;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(8px,1.5vw,22px);" aria-label="Primary">
+      <sc-for list="{{items}}" as="it" hint-placeholder-count="7">
+        <a href="{{it.href}}" style="position:relative;font-size:15px;font-weight:600;color:{{it.linkColor}};padding:6px 1px;transition:color .18s ease;" style-hover="color:#0F1A15;">
+          {{it.label}}
+          <sc-if value="{{it.isActive}}" hint-placeholder-val="{{true}}">
+            <span style="position:absolute;left:0;right:0;bottom:-3px;height:2px;border-radius:2px;background:{{accent}};"></span>
+          </sc-if>
+        </a>
+      </sc-for>
+    </nav>
+    <a href="PrivateLabel.dc.html" style="flex:0 0 auto;font-size:14px;font-weight:700;padding:10px 18px;border-radius:999px;background:{{accent}};color:#fff;transition:transform .18s ease,filter .18s ease;" style-hover="filter:brightness(.93);transform:translateY(-1px);">Get a quote</a>
+  </div>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:72},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#12B886&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;home&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;bio&quot;,&quot;marvins&quot;,&quot;xylitol&quot;,&quot;drops&quot;,&quot;mints&quot;,&quot;private&quot;,&quot;company&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent || '#12B886';
+    const active = this.props.active || 'home';
+    const items = [
+      { key: 'bio', label: 'BioGum', href: 'BioGum.dc.html' },
+      { key: 'marvins', label: "Marvin's", href: 'Marvins.dc.html' },
+      { key: 'xylitol', label: 'Xylitol', href: 'Xylitol.dc.html' },
+      { key: 'drops', label: 'Drops', href: 'Drops.dc.html' },
+      { key: 'mints', label: 'Mints', href: 'Mints.dc.html' },
+      { key: 'private', label: 'Private Label', href: 'PrivateLabel.dc.html' },
+      { key: 'company', label: 'Company', href: 'Company.dc.html' },
+    ].map(it => ({
+      ...it,
+      isActive: it.key === active,
+      linkColor: it.key === active ? '#0F1A15' : '#57645D',
+    }));
+    return { accent, items };
+  }
+}
+</script>
+</body>
+</html>

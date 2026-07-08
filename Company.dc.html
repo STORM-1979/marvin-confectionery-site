@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#F5F8F6;color:#0F1A15;font-family:"Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.55}
+a{color:inherit;text-decoration:none}
+a:hover{color:#3B4E5A}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0}
+::selection{background:#4E647233}
+@keyframes floatUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" accent="#4E6472" active="company" hint-size="100%,64px"></dc-import>
+
+<main>
+  <section style="background:linear-gradient(180deg,color-mix(in srgb,#4E6472 14%,#F5F8F6),#F5F8F6);">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(60px,9vw,116px) clamp(20px,5vw,64px);">
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;margin:0 0 20px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3B4E5A;">Our company</p>
+      <h1 style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.06s;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.96;font-size:clamp(44px,7.5vw,98px);max-width:16ch;">Making sugar-free the standard.</h1>
+      <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:26px 0 0;max-width:640px;font-size:clamp(18px,2.2vw,23px);line-height:1.5;color:#48554E;">Marvin is an independent confectionery manufacturer. For four decades we've done one thing well — making chewing gum, drops and mints without sugar, for our own brands and for businesses around the world.</p>
+    </div>
+  </section>
+
+  <!-- IMAGERY STRIP -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,64px) 0;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+      <div style="aspect-ratio:4/3;border-radius:18px;border:1px solid #E2E8E4;background:#EDF3F0 url('photos/company-1.png') center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;"></div>
+      <div style="aspect-ratio:4/3;border-radius:18px;border:1px solid #E2E8E4;background:#EDF3F0 url('photos/company-2.png') center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;"></div>
+      <div style="aspect-ratio:4/3;border-radius:18px;border:1px solid #E2E8E4;background:#EDF3F0 url('photos/company-3.png') center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;"></div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(60px,8vw,110px) clamp(20px,5vw,64px);">
+    <div style="border-top:1px solid #E2E8E4;padding-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,5vw,56px);">
+      <div>
+        <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3B4E5A;">Our mission</p>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4vw,46px);line-height:1.05;">Proof that sugar-free never has to mean taste-free.</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;color:#48554E;font-size:17px;line-height:1.6;">
+        <p style="margin:0;">Placeholder mission copy. Describe what the company stands for, who you make for, and the promise behind every product you ship.</p>
+        <p style="margin:0;">Add a second paragraph on values — quality, transparency, and the long view on health and sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY / CERTS -->
+  <section style="background:#0E1712;color:#E7EEEA;">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px);">
+      <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8FB0C0;">Quality &amp; certifications</p>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4vw,46px);line-height:1;margin-bottom:36px;">Held to a higher standard</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;">
+        <div style="border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px;text-align:center;"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#B7CBD6;">ISO 22000</div><p style="margin:6px 0 0;color:#8FA39B;font-size:13px;">Food safety</p></div>
+        <div style="border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px;text-align:center;"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#B7CBD6;">HACCP</div><p style="margin:6px 0 0;color:#8FA39B;font-size:13px;">Hazard control</p></div>
+        <div style="border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px;text-align:center;"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#B7CBD6;">Vegan</div><p style="margin:6px 0 0;color:#8FA39B;font-size:13px;">Certified lines</p></div>
+        <div style="border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px;text-align:center;"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#B7CBD6;">Halal</div><p style="margin:6px 0 0;color:#8FA39B;font-size:13px;">On request</p></div>
+      </div>
+      <p style="margin:20px 0 0;color:#7E938B;font-size:14px;font-family:'Space Mono',monospace;">Placeholder — replace with your actual certifications and audit bodies.</p>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(60px,8vw,110px) clamp(20px,5vw,64px);">
+    <p style="margin:0 0 10px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3B4E5A;">Our story</p>
+    <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4vw,46px);line-height:1;margin-bottom:40px;">Four decades, one idea</h2>
+    <div style="display:flex;flex-direction:column;">
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid #E2E8E4;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#4E6472;">1985</div>
+        <div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;margin-bottom:5px;">The first sugar-free gum</h3><p style="margin:0;color:#55635C;font-size:15px;max-width:600px;">Placeholder milestone — the founding story goes here.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid #E2E8E4;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#4E6472;">1998</div>
+        <div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;margin-bottom:5px;">Xylitol range launches</h3><p style="margin:0;color:#55635C;font-size:15px;max-width:600px;">Placeholder milestone — a key product or market moment.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid #E2E8E4;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#4E6472;">2012</div>
+        <div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;margin-bottom:5px;">Private-label division</h3><p style="margin:0;color:#55635C;font-size:15px;max-width:600px;">Placeholder milestone — expansion into contract manufacturing.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid #E2E8E4;border-bottom:1px solid #E2E8E4;">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#4E6472;">2026</div>
+        <div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;margin-bottom:5px;">Six brands, 60 markets</h3><p style="margin:0;color:#55635C;font-size:15px;max-width:600px;">Placeholder milestone — where the company is today.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px) clamp(64px,9vw,120px);">
+    <div style="border-radius:28px;padding:clamp(36px,6vw,72px);background:linear-gradient(135deg,#4E6472,color-mix(in srgb,#4E6472 55%,#0F1A15));display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;">
+      <div style="max-width:560px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4.2vw,46px);line-height:1.03;color:#fff;">Let's talk.</h2>
+        <p style="margin:14px 0 0;color:rgba(255,255,255,.9);font-size:17px;">Questions about our brands, sourcing or partnership? We'd love to hear from you.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="mailto:hello@marvin.example" style="font-size:16px;font-weight:700;padding:15px 26px;border-radius:999px;background:#fff;color:#0F1A15;transition:transform .18s ease;" style-hover="transform:translateY(-2px);">Email us</a>
+        <a href="PrivateLabel.dc.html" style="font-size:16px;font-weight:700;padding:15px 26px;border-radius:999px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);transition:transform .18s ease,border-color .18s ease;" style-hover="transform:translateY(-2px);border-color:#fff;">Private label →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dc-import name="SiteFooter" accent="#4E6472" hint-size="100%,460px"></dc-import>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Design-tool source artifacts (not used by the site)
+uploads/
+.thumbnail
+
+# Vercel
+.vercel
