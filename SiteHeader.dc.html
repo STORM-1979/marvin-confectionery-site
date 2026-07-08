@@ -11,15 +11,15 @@
   <div style="position:relative;max-width:1200px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;gap:18px;">
     <a href="Home.dc.html" style="display:flex;align-items:center;gap:9px;flex:0 0 auto;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.03em;color:#0F1A15;">
       <span style="width:13px;height:13px;border-radius:4px;background:{{accent}};display:inline-block;"></span>
-      MARVIN
+      Slynn
     </a>
     <input type="checkbox" id="dc-navtoggle" class="dc-navtoggle" aria-hidden="true">
     <label for="dc-navtoggle" class="dc-burger" aria-label="Open menu" role="button" tabindex="0">
       <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h20M0 7h20M0 13h20" stroke="#0F1A15" stroke-width="2" stroke-linecap="round"/></svg>
     </label>
-    <nav class="dc-nav" style="flex:1 1 320px;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(8px,1.5vw,22px);" aria-label="Primary">
-      <sc-for list="{{items}}" as="it" hint-placeholder-count="7">
-        <a href="{{it.href}}" style="position:relative;font-size:15px;font-weight:600;color:{{it.linkColor}};padding:6px 1px;transition:color .18s ease;" style-hover="color:#0F1A15;">
+    <nav class="dc-nav" style="flex:1 1 320px;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(5px,0.9vw,15px);" aria-label="Primary">
+      <sc-for list="{{items}}" as="it" hint-placeholder-count="8">
+        <a href="{{it.href}}" style="position:relative;font-size:14px;font-weight:600;color:{{it.linkColor}};padding:6px 1px;white-space:nowrap;transition:color .18s ease;" style-hover="color:#0F1A15;">
           {{it.label}}
           <sc-if value="{{it.isActive}}" hint-placeholder-val="{{true}}">
             <span style="position:absolute;left:0;right:0;bottom:-3px;height:2px;border-radius:2px;background:{{accent}};"></span>
@@ -37,13 +37,14 @@ class Component extends DCLogic {
     const accent = this.props.accent || '#12B886';
     const active = this.props.active || 'home';
     const items = [
-      { key: 'bio', label: 'BioGum', href: 'BioGum.dc.html' },
-      { key: 'marvins', label: "Marvin's", href: 'Marvins.dc.html' },
-      { key: 'xylitol', label: 'Xylitol', href: 'Xylitol.dc.html' },
-      { key: 'drops', label: 'Drops', href: 'Drops.dc.html' },
-      { key: 'mints', label: 'Mints', href: 'Mints.dc.html' },
+      { key: 'home', label: 'Home', href: 'Home.dc.html' },
+      { key: 'bio', label: 'Functional Gum', href: 'BioGum.dc.html' },
+      { key: 'marvins', label: 'Classic Gum', href: 'Marvins.dc.html' },
+      { key: 'xylitol', label: 'Xylitol Gum', href: 'Xylitol.dc.html' },
+      { key: 'drops', label: 'Sugar-Free Drops', href: 'Drops.dc.html' },
+      { key: 'mints', label: 'Sugar-Free Mints', href: 'Mints.dc.html' },
       { key: 'private', label: 'Private Label', href: 'PrivateLabel.dc.html' },
-      { key: 'company', label: 'Company', href: 'Company.dc.html' },
+      { key: 'contact', label: 'Contact', href: 'Company.dc.html' },
     ].map(it => ({
       ...it,
       isActive: it.key === active,

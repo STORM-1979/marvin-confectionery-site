@@ -25,7 +25,7 @@ h1,h2,h3{margin:0}
 /* responsive nav / burger */
 .dc-burger{display:none}
 .dc-navtoggle{position:absolute;width:1px;height:1px;opacity:0;margin:-1px;pointer-events:none}
-@media(max-width:1024px){
+@media(max-width:1200px){
 .dc-nav{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;flex-wrap:nowrap !important;align-items:stretch !important;justify-content:flex-start !important;gap:0 !important;background:#F5F8F6;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid #E2E8E4;padding:8px clamp(20px,5vw,64px) 16px;box-shadow:0 24px 44px -26px rgba(15,26,21,.3)}
 .dc-nav a{padding:13px 2px !important;font-size:17px !important;border-bottom:1px solid #EDF1EE}
 .dc-navtoggle:checked~.dc-nav{display:flex !important}
@@ -54,15 +54,16 @@ article:hover .dc-desc{color:#141E19 !important}
       <div>
         <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;margin:0 0 20px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0B818C;">100% xylitol · Tooth-friendly · Sugar-free</p>
         <h1 style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.06s;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.94;font-size:clamp(46px,7.5vw,96px);">Xylitol Gum</h1>
-        <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:22px 0 0;max-width:520px;font-size:clamp(18px,2.2vw,22px);line-height:1.5;color:#48554E;">Sweetened with 100% xylitol — the natural sweetener dentists talk about. Fresh breath and a cleaner-feeling mouth, no sugar required.</p>
+        <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:22px 0 0;max-width:520px;font-size:clamp(18px,2.2vw,22px);line-height:1.5;color:#48554E;">Xylitol chewing gum for daily freshness. Sugar-free chewing gum sweetened with xylitol, designed for fresh breath and a cleaner-feeling mouth after meals, coffee or throughout the day.</p>
         <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.22s;margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;">
           <a href="#range" style="font-size:16px;font-weight:700;padding:14px 26px;border-radius:999px;background:#0FA3B1;color:#fff;transition:transform .18s ease,filter .18s ease;" style-hover="filter:brightness(.95);transform:translateY(-2px);">See the range</a>
           <a href="#xylitol" style="font-size:16px;font-weight:700;padding:14px 26px;border-radius:999px;background:#fff;color:#0F1A15;border:1px solid #DDE5E0;transition:border-color .18s ease,transform .18s ease;" style-hover="border-color:#0FA3B1;transform:translateY(-2px);">What is xylitol? →</a>
         </div>
         <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s;margin-top:34px;display:flex;flex-wrap:wrap;gap:9px;">
-          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">100% xylitol</span>
-          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Tooth-friendly</span>
-          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Aspartame-free</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Xylitol-sweetened</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Sugar-free</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Fresh breath</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 30%,#DDE5E0);color:#26363A;">Private label available</span>
         </div>
       </div>
       <div style="position:relative;aspect-ratio:1/1;border-radius:28px;background:linear-gradient(135deg,#0FA3B1,color-mix(in srgb,#0FA3B1 55%,#0F1A15));display:flex;align-items:center;justify-content:center;overflow:hidden;padding:clamp(22px,4vw,46px);">
@@ -78,17 +79,21 @@ article:hover .dc-desc{color:#141E19 !important}
       <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,4.5vw,52px);line-height:1;">The Xylitol lineup</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px;">
-      <article style="display:flex;flex-direction:column;gap:13px;">
-        <div style="position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/07.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:15px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(15,163,177,.5);border-color:#0FA3B1;">
-          
+      <article style="display:flex;flex-direction:column;gap:14px;">
+        <div style="aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/07.png') center/contain no-repeat;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(15,163,177,.5);border-color:#0FA3B1;"></div>
+        <div>
+          <span style="display:block;width:26px;height:3px;border-radius:3px;background:#0FA3B1;margin-bottom:11px;"></span>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em;">Mint</h3>
+          <p style="margin:7px 0 0;font-size:14px;line-height:1.5;color:#55635C;">Sugar-free xylitol chewing gum with a balanced mint profile and a clean mouthfeel.</p>
         </div>
-        <p class="dc-desc" style="margin:0;font-size:15px;color:#55635C;">One-line product description goes here — flavour, pack size or key claim.</p>
       </article>
-      <article style="display:flex;flex-direction:column;gap:13px;">
-        <div style="position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/10.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:15px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(15,163,177,.5);border-color:#0FA3B1;">
-          
+      <article style="display:flex;flex-direction:column;gap:14px;">
+        <div style="aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/10.png') center/contain no-repeat;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(15,163,177,.5);border-color:#0FA3B1;"></div>
+        <div>
+          <span style="display:block;width:26px;height:3px;border-radius:3px;background:#0FA3B1;margin-bottom:11px;"></span>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em;">Berries</h3>
+          <p style="margin:7px 0 0;font-size:14px;line-height:1.5;color:#55635C;">Sugar-free xylitol chewing gum with a soft berry flavour and a fresh chewing experience.</p>
         </div>
-        <p class="dc-desc" style="margin:0;font-size:15px;color:#55635C;">One-line product description goes here — flavour, pack size or key claim.</p>
       </article>
     </div>
   </section>
@@ -98,16 +103,16 @@ article:hover .dc-desc{color:#141E19 !important}
       <div>
         <p style="margin:0 0 12px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0B818C;">The ingredient</p>
         <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,4vw,46px);line-height:1.03;">Why xylitol?</h2>
-        <p style="margin:16px 0 0;color:#3B4842;font-size:17px;line-height:1.6;max-width:520px;">Xylitol is a naturally occurring sweetener that tastes like sugar but isn't. Placeholder text — add your approved claims on oral health, glycaemic response and sourcing here.</p>
+        <p style="margin:16px 0 0;color:#3B4842;font-size:17px;line-height:1.6;max-width:520px;">Xylitol is a naturally occurring sweetener, found in fruit and birch, that tastes like sugar but contains no sugar. It is widely used in sugar-free chewing gum and mints for everyday freshness and a cleaner-feeling mouth.</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 20%,#E2E8E4);border-radius:16px;padding:20px;">
           <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#0FA3B1;">40%</div>
-          <p style="margin:6px 0 0;color:#55635C;font-size:14px;">Fewer calories than sugar (placeholder).</p>
+          <p style="margin:6px 0 0;color:#55635C;font-size:14px;">Fewer calories than sugar.</p>
         </div>
         <div style="background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 20%,#E2E8E4);border-radius:16px;padding:20px;">
-          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#0FA3B1;">0</div>
-          <p style="margin:6px 0 0;color:#55635C;font-size:14px;">Impact on tooth enamel.</p>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#0FA3B1;">0g</div>
+          <p style="margin:6px 0 0;color:#55635C;font-size:14px;">Added sugar.</p>
         </div>
         <div style="background:#fff;border:1px solid color-mix(in srgb,#0FA3B1 20%,#E2E8E4);border-radius:16px;padding:20px;">
           <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#0FA3B1;">Low</div>

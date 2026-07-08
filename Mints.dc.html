@@ -25,7 +25,7 @@ h1,h2,h3{margin:0}
 /* responsive nav / burger */
 .dc-burger{display:none}
 .dc-navtoggle{position:absolute;width:1px;height:1px;opacity:0;margin:-1px;pointer-events:none}
-@media(max-width:1024px){
+@media(max-width:1200px){
 .dc-nav{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;flex-wrap:nowrap !important;align-items:stretch !important;justify-content:flex-start !important;gap:0 !important;background:#F5F8F6;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid #E2E8E4;padding:8px clamp(20px,5vw,64px) 16px;box-shadow:0 24px 44px -26px rgba(15,26,21,.3)}
 .dc-nav a{padding:13px 2px !important;font-size:17px !important;border-bottom:1px solid #EDF1EE}
 .dc-navtoggle:checked~.dc-nav{display:flex !important}
@@ -54,19 +54,20 @@ article:hover .dc-desc{color:#141E19 !important}
       <div>
         <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;margin:0 0 20px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2E86D6;">Ice-cool · Fresh breath · Sugar-free</p>
         <h1 style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.06s;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.94;font-size:clamp(44px,7vw,90px);">Sugar-Free Mints</h1>
-        <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:22px 0 0;max-width:520px;font-size:clamp(18px,2.2vw,22px);line-height:1.5;color:#48554E;">A hit of ice-cool freshness in a pocket-sized tin. Crisp, clean and sugar-free — for that just-brushed feeling, anywhere.</p>
+        <p style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.14s;margin:22px 0 0;max-width:520px;font-size:clamp(18px,2.2vw,22px);line-height:1.5;color:#48554E;">Sugar-free pressed dragees for instant freshness. Made with sorbitol and created for quick freshness in a compact, pocket-friendly format.</p>
         <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.22s;margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;">
           <a href="#range" style="font-size:16px;font-weight:700;padding:14px 26px;border-radius:999px;background:#4DA6F0;color:#fff;transition:transform .18s ease,filter .18s ease;" style-hover="filter:brightness(.95);transform:translateY(-2px);">See the range</a>
           <a href="#benefits" style="font-size:16px;font-weight:700;padding:14px 26px;border-radius:999px;background:#fff;color:#0F1A15;border:1px solid #DDE5E0;transition:border-color .18s ease,transform .18s ease;" style-hover="border-color:#4DA6F0;transform:translateY(-2px);">The freshness →</a>
         </div>
         <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s;margin-top:34px;display:flex;flex-wrap:wrap;gap:9px;">
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Made with sorbitol</span>
           <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Sugar-free</span>
-          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Extra strong</span>
-          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Pocket tin</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Pressed dragees</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#4DA6F0 30%,#DDE5E0);color:#243642;">Pocket-friendly format</span>
         </div>
       </div>
       <div style="position:relative;aspect-ratio:1/1;border-radius:28px;background:linear-gradient(135deg,#4DA6F0,color-mix(in srgb,#4DA6F0 55%,#0F1A15));display:flex;align-items:center;justify-content:center;overflow:hidden;padding:clamp(22px,4vw,46px);">
-        <div style="width:100%;height:100%;border-radius:20px;background:#fff url('photos/18.png') center/contain no-repeat;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);"></div>
+        <div style="width:100%;height:100%;border-radius:20px;background:#fff url('photos/04.png') center/contain no-repeat;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);"></div>
         <span style="position:absolute;top:22px;right:22px;animation:bob 4s ease-in-out infinite;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding:9px 14px;border-radius:999px;background:#fff;color:#2E86D6;">ICE-COOL</span>
       </div>
     </div>
@@ -78,23 +79,29 @@ article:hover .dc-desc{color:#141E19 !important}
       <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,4.5vw,52px);line-height:1;">The Mints lineup</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px;">
-      <article style="display:flex;flex-direction:column;gap:13px;">
-        <div style="position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/04.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:15px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;">
-          
+      <article style="display:flex;flex-direction:column;gap:14px;">
+        <div style="aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/04.png') center/contain no-repeat;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;"></div>
+        <div>
+          <span style="display:block;width:26px;height:3px;border-radius:3px;background:#4DA6F0;margin-bottom:11px;"></span>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em;">Mint</h3>
+          <p style="margin:7px 0 0;font-size:14px;line-height:1.5;color:#55635C;">Sugar-free pressed dragees with a clean mint flavour and a strong cooling finish.</p>
         </div>
-        <p class="dc-desc" style="margin:0;font-size:15px;color:#55635C;">One-line product description goes here — flavour, pack size or key claim.</p>
       </article>
-      <article style="display:flex;flex-direction:column;gap:13px;">
-        <div style="position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/18.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:15px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;">
-          
+      <article style="display:flex;flex-direction:column;gap:14px;">
+        <div style="aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/02.png') center/contain no-repeat;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;"></div>
+        <div>
+          <span style="display:block;width:26px;height:3px;border-radius:3px;background:#4DA6F0;margin-bottom:11px;"></span>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em;">Berries</h3>
+          <p style="margin:7px 0 0;font-size:14px;line-height:1.5;color:#55635C;">Sugar-free pressed dragees with a mixed berry flavour and a fresh, fruity finish.</p>
         </div>
-        <p class="dc-desc" style="margin:0;font-size:15px;color:#55635C;">One-line product description goes here — flavour, pack size or key claim.</p>
       </article>
-      <article style="display:flex;flex-direction:column;gap:13px;">
-        <div style="position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/19.png') center/contain no-repeat;display:flex;align-items:flex-end;padding:15px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;">
-          
+      <article style="display:flex;flex-direction:column;gap:14px;">
+        <div style="aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #E2E8E4;background:#fff url('photos/09.png') center/contain no-repeat;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;" style-hover="transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(77,166,240,.5);border-color:#4DA6F0;"></div>
+        <div>
+          <span style="display:block;width:26px;height:3px;border-radius:3px;background:#4DA6F0;margin-bottom:11px;"></span>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em;">Juicy Orange</h3>
+          <p style="margin:7px 0 0;font-size:14px;line-height:1.5;color:#55635C;">Sugar-free pressed dragees with a juicy orange flavour and a bright citrus freshness.</p>
         </div>
-        <p class="dc-desc" style="margin:0;font-size:15px;color:#55635C;">One-line product description goes here — flavour, pack size or key claim.</p>
       </article>
     </div>
   </section>
@@ -103,18 +110,18 @@ article:hover .dc-desc{color:#141E19 !important}
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;border-top:1px solid #E2E8E4;padding-top:44px;">
       <div>
         <div style="font-family:'Space Mono',monospace;font-weight:700;color:#4DA6F0;font-size:14px;">01</div>
-        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Instant freshness</h3>
-        <p style="margin:0;color:#55635C;font-size:15px;">A cool rush of mint that kicks in the moment it hits your tongue.</p>
+        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Made with sorbitol</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">Pressed dragees made with sorbitol for quick, sugar-free freshness.</p>
       </div>
       <div>
         <div style="font-family:'Space Mono',monospace;font-weight:700;color:#4DA6F0;font-size:14px;">02</div>
-        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Sugar-free &amp; tiny</h3>
-        <p style="margin:0;color:#55635C;font-size:15px;">Micro-mints sweetened without sugar — big freshness, small footprint.</p>
+        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Instant freshness</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">A clean, cooling hit of freshness the moment a dragee hits your tongue.</p>
       </div>
       <div>
         <div style="font-family:'Space Mono',monospace;font-weight:700;color:#4DA6F0;font-size:14px;">03</div>
-        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Click-shut tin</h3>
-        <p style="margin:0;color:#55635C;font-size:15px;">A satisfying pocket tin that keeps mints dry and rattle-free.</p>
+        <h3 style="margin:12px 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;">Pocket-friendly format</h3>
+        <p style="margin:0;color:#55635C;font-size:15px;">A compact, pocket-friendly pack for on-the-go freshness — and private label ready.</p>
       </div>
     </div>
   </section>
