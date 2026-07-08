@@ -21,6 +21,16 @@ img{max-width:100%;display:block}
 h1,h2,h3{margin:0}
 ::selection{background:#4E647233}
 @keyframes floatUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+/* responsive nav / burger */
+.dc-burger{display:none}
+.dc-navtoggle{position:absolute;width:1px;height:1px;opacity:0;margin:-1px;pointer-events:none}
+@media(max-width:1024px){
+.dc-nav{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;flex-wrap:nowrap !important;align-items:stretch !important;justify-content:flex-start !important;gap:0 !important;background:#F5F8F6;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid #E2E8E4;padding:8px clamp(20px,5vw,64px) 16px;box-shadow:0 24px 44px -26px rgba(15,26,21,.3)}
+.dc-nav a{padding:13px 2px !important;font-size:17px !important;border-bottom:1px solid #EDF1EE}
+.dc-navtoggle:checked~.dc-nav{display:flex !important}
+.dc-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;width:46px;height:40px;margin-left:auto;border-radius:12px;border:1px solid #DDE5E0;background:#fff;transition:border-color .18s ease}
+.dc-burger:hover{border-color:#12B886}
+}
 </style>
 </helmet>
 
