@@ -32,6 +32,11 @@ h1,h2,h3{margin:0}
 .dc-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;width:46px;height:40px;margin-left:auto;border-radius:12px;border:1px solid #DDE5E0;background:#fff;transition:border-color .18s ease}
 .dc-burger:hover{border-color:#12B886}
 }
+/* nav reveal on scroll + chip hover */
+.dc-header{position:fixed !important;left:0;right:0;top:0;transform:translateY(-100%);transition:transform .38s cubic-bezier(.2,.7,.2,1)}
+html.dc-scrolled .dc-header{transform:none}
+.dc-chip{transition:transform .18s ease,background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease;will-change:transform}
+.dc-chip:hover{transform:translateY(-3px);background:#2F9E44 !important;border-color:#2F9E44 !important;color:#fff !important;box-shadow:0 12px 24px -12px color-mix(in srgb,#2F9E44 55%,transparent)}
 </style>
 </helmet>
 
@@ -50,9 +55,9 @@ h1,h2,h3{margin:0}
           <a href="#benefits" style="font-size:16px;font-weight:700;padding:14px 26px;border-radius:999px;background:#fff;color:#0F1A15;border:1px solid #DDE5E0;transition:border-color .18s ease,transform .18s ease;" style-hover="border-color:#2F9E44;transform:translateY(-2px);">Why plant-based →</a>
         </div>
         <div style="animation:floatUp .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s;margin-top:34px;display:flex;flex-wrap:wrap;gap:9px;">
-          <span style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">Vegan</span>
-          <span style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">Plastic-free base</span>
-          <span style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">+ Vitamin B12 &amp; D</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">Vegan</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">Plastic-free base</span>
+          <span class="dc-chip" style="font-family:'Space Mono',monospace;font-size:12px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid color-mix(in srgb,#2F9E44 30%,#DDE5E0);color:#2C3A34;">+ Vitamin B12 &amp; D</span>
         </div>
       </div>
       <div style="position:relative;aspect-ratio:1/1;border-radius:28px;background:linear-gradient(135deg,#2F9E44,color-mix(in srgb,#2F9E44 55%,#0F1A15));display:flex;align-items:center;justify-content:center;overflow:hidden;">
@@ -147,5 +152,6 @@ h1,h2,h3{margin:0}
 
 <dc-import name="SiteFooter" accent="#2F9E44" hint-size="100%,460px"></dc-import>
 </x-dc>
+<script>(function(){var d=document.documentElement;function u(){if(window.scrollY>40)d.classList.add("dc-scrolled");else d.classList.remove("dc-scrolled");}window.addEventListener("scroll",u,{passive:true});window.addEventListener("resize",u);u();})();</script>
 </body>
 </html>
